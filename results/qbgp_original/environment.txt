@@ -1,0 +1,9 @@
+OS: win32
+Python: 3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]
+Git Commit: 457f51b2cc8682aa811a9664c564bcaf9ab7121e
+Repository URL: https://github.com/lizhuohua/quantum-bgp-online-path-selection
+NetworkX: 3.5
+NumPy: 2.3.2
+SciPy: 1.16.1
+Matplotlib: 3.11.1
+NetSquid: NOT INSTALLED (No module named 'netsquid')

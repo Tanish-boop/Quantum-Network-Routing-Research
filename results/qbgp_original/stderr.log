@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\Quantum Computing Reaserch\qbgp_repo\main.py", line 3, in <module>
+    import plots
+  File "C:\Users\hp\OneDrive\Desktop\Quantum Computing Reaserch\qbgp_repo\plots\__init__.py", line 2, in <module>
+    from .average_fidelity_vs_with_or_without_benchmarking_vs_l import \
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        plot_average_fidelity_vs_with_or_without_benchmarking_vs_l  # noqa: F401
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\OneDrive\Desktop\Quantum Computing Reaserch\qbgp_repo\plots\average_fidelity_vs_with_or_without_benchmarking_vs_l.py", line 7, in <module>
+    from components import QuantumNetwork
+  File "C:\Users\hp\OneDrive\Desktop\Quantum Computing Reaserch\qbgp_repo\components.py", line 4, in <module>
+    import netsquid as ns
+ModuleNotFoundError: No module named 'netsquid'

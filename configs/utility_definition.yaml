@@ -1,0 +1,28 @@
+# Frozen Route Utility Definition Specification
+# Version: 1.0.0
+# Date: 2026-09-11
+# Frozen prior to paired campaign execution
+
+utility_definition:
+  primary_formula: "U(P, X) = F_E2E(P, X) * P_succ(P, X) - alpha * T_latency(P) - beta * R_resource(P)"
+  parameters:
+    alpha: 0.05       # Latency penalty weight (per ms)
+    beta: 0.02        # Resource penalty weight (per hop)
+    c_fixed: 0.001    # Fixed benchmark setup cost
+    c_bounce: 0.0001  # Cost per bounce shot
+  
+  physical_models:
+    fidelity_parameterization: "F = (1 + p) / 2"
+    visibility_parameterization: "w = p = 2*F - 1"
+    bounce_observation_model: "b_m = A * p^(2m) + noise"
+    werner_e2e_composition: "w_e2e = prod(w_e) * exp(-t_wait / T2_min)"
+    end_to_end_fidelity: "F_e2e = 0.25 + 0.75 * w_e2e"
+    success_probability: "P_succ = prod(p_gen_e)"
+    latency: "T_latency = sum(delay_e) + (1 / P_succ) * 0.1"
+
+  benchmark_cost_model:
+    gross_evsi: "E_Y[ max_P E[U(P,X)|B_t,Y,a] ] - max_P E[U(P,X)|B_t]"
+    net_evsi: "Gross_EVSI(a) - C(a)"
+    cost_function: "C(a) = c_fixed + c_bounce * m * n_shots"
+
+  checksum: "sha256_utility_frozen_v1"

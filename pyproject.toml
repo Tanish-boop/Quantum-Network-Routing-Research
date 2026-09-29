@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-network-decision-aware-routing"
+version = "0.1.0"
+description = "Decision-Aware Quantum Network Routing under Uncertain Network State"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.6.0",
+    "networkx>=3.0",
+    "pyyaml>=6.0"
+]

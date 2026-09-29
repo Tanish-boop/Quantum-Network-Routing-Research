@@ -1,0 +1,121 @@
+{
+  "task9_observation_model": {
+    "mean_weak": 0.16056280909993959,
+    "mean_strong": 0.7327398526674956,
+    "std_weak": 0.006780968095847623,
+    "std_strong": 0.007193803340639394,
+    "z_score": 1294.1847990763815,
+    "is_distinguishable": true
+  },
+  "task10_multihop_path_dists": {
+    "P1_2hop": {
+      "hops": 2,
+      "fidelity": 0.6174999999999999,
+      "p_succ": 0.6400000000000001,
+      "latency": 2.15625,
+      "utility": 0.2473875
+    },
+    "P2_3hop": {
+      "hops": 3,
+      "fidelity": 0.8340160000000001,
+      "p_succ": 0.5120000000000001,
+      "latency": 3.1953125,
+      "utility": 0.2072505670000001
+    },
+    "P4_4hop": {
+      "hops": 4,
+      "fidelity": 0.9417761199999999,
+      "p_succ": 0.40960000000000013,
+      "latency": 4.244140625,
+      "utility": 0.09354446750200009
+    }
+  },
+  "task2_posterior_update_impact": {
+    "posterior_changed_rate": 1.0,
+    "evsi_route_switch_rate": 0.29086932750136685,
+    "expected_u_change_rate": 0.29086932750136685,
+    "actual_u_change_rate": 1.0
+  },
+  "task3_decision_value_delta_u": {
+    "mean": -0.0027312033950070004,
+    "median": 0.0,
+    "std": 0.010540772203644551,
+    "ci_95": [
+      -0.02569289271371871,
+      0.0
+    ],
+    "fraction_positive": 0.0,
+    "fraction_zero": 0.8176505702346917,
+    "fraction_negative": 0.18234942976530838
+  },
+  "task4_and_5_boundary_scenarios": {
+    "scenarios_count": 1000,
+    "epsilon": 0.05,
+    "switch_rate_ig": 0.159,
+    "switch_rate_evsi": 0.365,
+    "switch_rate_evsi_pos": 0.4965986394557823,
+    "switch_rate_evsi_neg": 0.0,
+    "performance": {
+      "P0": {
+        "policy_name": "Never Benchmark",
+        "net_utility": 0.21547513522268022,
+        "benchmark_cost": 0.0,
+        "switched_rate": 0.0,
+        "oracle_regret": 0.041479466415500016
+      },
+      "P2": {
+        "policy_name": "Information Gain",
+        "net_utility": 0.21267013256375344,
+        "benchmark_cost": 0.011040000000000003,
+        "switched_rate": 0.159,
+        "oracle_regret": 0.04428446907442679
+      },
+      "P4": {
+        "policy_name": "EVSI / Decision-Aware",
+        "net_utility": 0.22027027112490977,
+        "benchmark_cost": 0.008954999999999998,
+        "switched_rate": 0.365,
+        "oracle_regret": 0.03668433051327047
+      },
+      "P8": {
+        "policy_name": "Oracle",
+        "net_utility": 0.25695460163818024,
+        "benchmark_cost": 0.0,
+        "switched_rate": 0.0,
+        "oracle_regret": 0.0
+      }
+    }
+  },
+  "task6_and_7_correlations_and_matrix": {
+    "pearson_ig": 0.0,
+    "spearman_ig": 0.0,
+    "pearson_evsi": 0.0,
+    "spearman_evsi": 0.0,
+    "disagreement_matrix": {
+      "Cat_A_HighIG_LowEVSI": {
+        "count": 368,
+        "percentage": 46.0,
+        "route_switch_rate": 0.0,
+        "mean_decision_value": 0.0
+      },
+      "Cat_B_LowIG_HighEVSI": {
+        "count": 9,
+        "percentage": 1.125,
+        "route_switch_rate": 0.0,
+        "mean_decision_value": 0.0
+      },
+      "Cat_C_LowIG_LowEVSI": {
+        "count": 391,
+        "percentage": 48.875,
+        "route_switch_rate": 0.0,
+        "mean_decision_value": 0.0
+      },
+      "Cat_D_HighIG_HighEVSI": {
+        "count": 32,
+        "percentage": 4.0,
+        "route_switch_rate": 0.0,
+        "mean_decision_value": 0.0
+      }
+    }
+  }
+}

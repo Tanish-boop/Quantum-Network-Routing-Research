@@ -1,0 +1,107 @@
+{
+  "simulator_type": "SIMULATOR_RECONSTRUCTION \u2014 NOT NETSQUID",
+  "seeds_per_regime": 50,
+  "policies": [
+    "Never",
+    "Always",
+    "IG",
+    "Confidence",
+    "EVSI",
+    "LinkSelFiE",
+    "BeQuP-Link",
+    "BeQuP-Path",
+    "Oracle"
+  ],
+  "regimes": {
+    "A_obvious_route": {
+      "description": "Clearly separated route utilities",
+      "A_p1": 0.95,
+      "A_p2": 0.5,
+      "p_std": 0.05,
+      "T2": 100.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "B_close_route": {
+      "description": "Close competing routes",
+      "A_p1": 0.82,
+      "A_p2": 0.81,
+      "p_std": 0.05,
+      "T2": 100.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "C_high_uncertainty": {
+      "description": "High network-state uncertainty",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.2,
+      "T2": 100.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "D_low_uncertainty": {
+      "description": "Low network-state uncertainty",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.02,
+      "T2": 100.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "E_short_T2": {
+      "description": "Short quantum-memory T2",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.08,
+      "T2": 5.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "F_long_T2": {
+      "description": "Long quantum-memory T2",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.08,
+      "T2": 500.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    },
+    "G_low_cost": {
+      "description": "Low benchmarking cost",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.08,
+      "T2": 100.0,
+      "c_fixed": 0.0001,
+      "c_bounce": 1e-05
+    },
+    "H_high_cost": {
+      "description": "High benchmarking cost",
+      "A_p1": 0.85,
+      "A_p2": 0.8,
+      "p_std": 0.08,
+      "T2": 100.0,
+      "c_fixed": 0.05,
+      "c_bounce": 0.005
+    },
+    "I_route_crossing": {
+      "description": "Route-ranking-crossing regimes",
+      "A_p1": 0.88,
+      "A_p2": 0.78,
+      "p_std": 0.12,
+      "T2": 80.0,
+      "c_fixed": 0.002,
+      "c_bounce": 0.0002
+    },
+    "J_high_ig_nuisance": {
+      "description": "High-information nuisance measurements (IG(a1)>IG(a2) but EVSI(a1)<EVSI(a2))",
+      "A_p1": 0.9,
+      "A_p2": 0.7,
+      "p_std": 0.25,
+      "T2": 100.0,
+      "c_fixed": 0.001,
+      "c_bounce": 0.0001
+    }
+  }
+}

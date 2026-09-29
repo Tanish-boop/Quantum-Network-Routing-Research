@@ -1,0 +1,153 @@
+{
+  "canonical_configuration": {
+    "num_regimes": 10,
+    "seeds_per_regime": 500,
+    "total_campaign_seeds": 5000,
+    "total_policy_evaluations": 45000,
+    "num_boundary_scenarios": 1000,
+    "boundary_epsilon": 0.05,
+    "topology": "4-path multi-hop (P1: 2-hop, P2: 3-hop, P3: 3-hop, P4: 4-hop)",
+    "particles": 25,
+    "predictive_samples": 15
+  },
+  "key_claims_verification": {
+    "evsi_net_utility_main": 0.2605846349227607,
+    "never_net_utility_main": 0.26002415531592027,
+    "ig_net_utility_main": 0.1977350738626188,
+    "oracle_utility_main": 0.28624900867389286
+  },
+  "decision_boundary_scenarios": {
+    "boundary_scenarios_count": 1000,
+    "evsi_net_utility": 0.2212690402734848,
+    "never_net_utility": 0.21737977681520138,
+    "ig_net_utility": 0.21366530025756927,
+    "oracle_net_utility": 0.25716799590174405,
+    "evsi_route_switch_rate": 0.352,
+    "ig_route_switch_rate": 0.164,
+    "evsi_regret": 0.03589895562825926,
+    "ig_regret": 0.04350269564417478,
+    "never_regret": 0.039788219086542675,
+    "policy_summary": {
+      "P0": {
+        "policy_name": "Never Benchmark",
+        "net_utility": 0.21737977681520138,
+        "net_utility_ci_95": [
+          0.21284796911826395,
+          0.22191283590729116
+        ],
+        "benchmark_cost": 0.0,
+        "switched_rate": 0.0,
+        "oracle_regret": 0.039788219086542675
+      },
+      "P1": {
+        "policy_name": "Always Benchmark",
+        "net_utility": 0.09337977681520138,
+        "net_utility_ci_95": [
+          0.08884796911826394,
+          0.09791283590729113
+        ],
+        "benchmark_cost": 0.12400000000000005,
+        "switched_rate": 0.0,
+        "oracle_regret": 0.16378821908654267
+      },
+      "P2": {
+        "policy_name": "Information Gain",
+        "net_utility": 0.21366530025756927,
+        "net_utility_ci_95": [
+          0.20908817831183546,
+          0.21828791002384826
+        ],
+        "benchmark_cost": 0.011010000000000002,
+        "switched_rate": 0.164,
+        "oracle_regret": 0.04350269564417478
+      },
+      "P3": {
+        "policy_name": "Confidence-Based Stopping",
+        "net_utility": 0.22619099813747032,
+        "net_utility_ci_95": [
+          0.22156098366498816,
+          0.2305387600876516
+        ],
+        "benchmark_cost": 0.011,
+        "switched_rate": 0.444,
+        "oracle_regret": 0.030976997764273734
+      },
+      "P4": {
+        "policy_name": "EVSI / Decision-Aware",
+        "net_utility": 0.2212690402734848,
+        "net_utility_ci_95": [
+          0.21702303138736778,
+          0.2253344675989939
+        ],
+        "benchmark_cost": 0.008759,
+        "switched_rate": 0.352,
+        "oracle_regret": 0.03589895562825926
+      },
+      "P5": {
+        "policy_name": "LinkSelFiE",
+        "net_utility": 0.21309077497737594,
+        "net_utility_ci_95": [
+          0.2083960088002412,
+          0.2174353631272847
+        ],
+        "benchmark_cost": 0.025000000000000005,
+        "switched_rate": 0.452,
+        "oracle_regret": 0.04407722092436811
+      },
+      "P6": {
+        "policy_name": "BeQuP-Link",
+        "net_utility": 0.22386193112982003,
+        "net_utility_ci_95": [
+          0.21918780010292918,
+          0.22809447175283737
+        ],
+        "benchmark_cost": 0.013000000000000003,
+        "switched_rate": 0.438,
+        "oracle_regret": 0.03330606477192402
+      },
+      "P7": {
+        "policy_name": "BeQuP-Path",
+        "net_utility": 0.22191352590908986,
+        "net_utility_ci_95": [
+          0.21702214943124298,
+          0.22616877208944203
+        ],
+        "benchmark_cost": 0.017000000000000008,
+        "switched_rate": 0.431,
+        "oracle_regret": 0.03525446999265419
+      },
+      "P8": {
+        "policy_name": "Oracle",
+        "net_utility": 0.25716799590174405,
+        "net_utility_ci_95": [
+          0.2537431352583494,
+          0.26044135285864456
+        ],
+        "benchmark_cost": 0.0,
+        "switched_rate": 0.0,
+        "oracle_regret": 0.0
+      }
+    }
+  },
+  "conditional_route_switching": {
+    "total_evsi_actions": 5000,
+    "evsi_positive_count": 1599,
+    "evsi_negative_count": 3401,
+    "evsi_positive_switches": 485,
+    "evsi_negative_switches": 0,
+    "p_switch_given_evsi_pos": 0.30331457160725456,
+    "p_switch_given_evsi_neg": 0.0,
+    "denominator_evsi_pos_explanation": "Total EVSI evaluations with Net_EVSI > 0 (1599 evaluations)",
+    "denominator_evsi_neg_explanation": "Total EVSI evaluations with Net_EVSI <= 0 (3401 evaluations)"
+  },
+  "high_ig_low_evsi_actions": {
+    "threshold_definition": "High IG >= 75th percentile of IG (0.0031) AND Net_EVSI <= 0",
+    "total_candidate_actions_evaluated": 6000,
+    "count_in_category": 922,
+    "percentage": 15.366666666666667,
+    "route_switch_rate": 0.0,
+    "mean_gross_decision_value": 0.03561910850642644,
+    "mean_acquisition_cost": 0.014177874186550978,
+    "mean_net_decision_value": 0.021441234319875463
+  }
+}

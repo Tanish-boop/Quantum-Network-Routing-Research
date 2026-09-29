@@ -1,0 +1,66 @@
+{
+  "EVSI_minus_P0_Never Benchmark": {
+    "mean_diff": -0.004041800000000002,
+    "median_diff": 0.0,
+    "ci_95_low": -0.0046403250000000024,
+    "ci_95_high": -0.003426895000000002,
+    "win_rate": 0.0,
+    "cohens_d": -0.597272242018983
+  },
+  "EVSI_minus_P1_Always Benchmark": {
+    "mean_diff": 0.36237820000000004,
+    "median_diff": 0.062,
+    "ci_95_low": 0.28771744000000005,
+    "ci_95_high": 0.44640943499999997,
+    "win_rate": 1.0,
+    "cohens_d": 0.3965387099327162
+  },
+  "EVSI_minus_P2_Information Gain": {
+    "mean_diff": 0.09197620000000001,
+    "median_diff": 0.01100000000000001,
+    "ci_95_low": 0.070266555,
+    "ci_95_high": 0.11687670500000001,
+    "win_rate": 0.742,
+    "cohens_d": 0.3598190196204025
+  },
+  "EVSI_minus_P3_Confidence-Based Stopping": {
+    "mean_diff": 0.06096820000000001,
+    "median_diff": 0.01100000000000001,
+    "ci_95_low": 0.047159840000000015,
+    "ci_95_high": 0.07563675000000002,
+    "win_rate": 0.628,
+    "cohens_d": 0.3731928664539486
+  },
+  "EVSI_minus_P5_LinkSelFiE": {
+    "mean_diff": 0.14370819999999998,
+    "median_diff": 0.025000000000000022,
+    "ci_95_low": 0.11124911999999999,
+    "ci_95_high": 0.17897774999999996,
+    "win_rate": 1.0,
+    "cohens_d": 0.3890949928731097
+  },
+  "EVSI_minus_P6_BeQuP-Link": {
+    "mean_diff": 0.07278820000000001,
+    "median_diff": 0.013000000000000012,
+    "ci_95_low": 0.05586685500000001,
+    "ci_95_high": 0.08930320500000001,
+    "win_rate": 0.896,
+    "cohens_d": 0.37756413852688353
+  },
+  "EVSI_minus_P7_BeQuP-Path": {
+    "mean_diff": 0.0964282,
+    "median_diff": 0.017000000000000015,
+    "ci_95_low": 0.07499115,
+    "ci_95_high": 0.11824716,
+    "win_rate": 0.896,
+    "cohens_d": 0.3832185910083081
+  },
+  "EVSI_minus_P8_Oracle": {
+    "mean_diff": -0.01943930378431198,
+    "median_diff": -0.0010999999999999899,
+    "ci_95_low": -0.02253259944391516,
+    "ci_95_high": -0.016250975932297285,
+    "win_rate": 0.0,
+    "cohens_d": -0.5076615171459848
+  }
+}

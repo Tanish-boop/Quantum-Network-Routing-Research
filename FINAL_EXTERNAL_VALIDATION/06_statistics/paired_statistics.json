@@ -1,0 +1,66 @@
+{
+  "EVSI_minus_P0_Never Benchmark": {
+    "mean_diff": -0.0024777652773810823,
+    "median_diff": 0.0,
+    "ci_95_low": -0.002630192186696691,
+    "ci_95_high": -0.0023197675000000005,
+    "win_rate": 0.0,
+    "cohens_d": -0.4289160778982002
+  },
+  "EVSI_minus_P1_Always Benchmark": {
+    "mean_diff": 0.7303622347226191,
+    "median_diff": 0.124,
+    "ci_95_low": 0.6832685903680654,
+    "ci_95_high": 0.7789359361813688,
+    "win_rate": 1.0,
+    "cohens_d": 0.40038307902429493
+  },
+  "EVSI_minus_P2_Information Gain": {
+    "mean_diff": 0.07786103472261892,
+    "median_diff": 0.01100000000000001,
+    "ci_95_low": 0.07216083672261893,
+    "ci_95_high": 0.08364379844523785,
+    "win_rate": 0.7942,
+    "cohens_d": 0.3631550067438858
+  },
+  "EVSI_minus_P3_Confidence-Based Stopping": {
+    "mean_diff": 0.06253008,
+    "median_diff": 0.01100000000000001,
+    "ci_95_low": 0.05799327650000001,
+    "ci_95_high": 0.06709076400000002,
+    "win_rate": 0.769,
+    "cohens_d": 0.3844073904438209
+  },
+  "EVSI_minus_P5_LinkSelFiE": {
+    "mean_diff": 0.14527536640445035,
+    "median_diff": 0.025000000000000022,
+    "ci_95_low": 0.13527346416011124,
+    "ci_95_high": 0.15461878024433903,
+    "win_rate": 1.0,
+    "cohens_d": 0.3942683936438021
+  },
+  "EVSI_minus_P6_BeQuP-Link": {
+    "mean_diff": 0.07435008000000003,
+    "median_diff": 0.013000000000000012,
+    "ci_95_low": 0.06910038000000002,
+    "ci_95_high": 0.07923733000000001,
+    "win_rate": 0.9192,
+    "cohens_d": 0.3871203288438783
+  },
+  "EVSI_minus_P7_BeQuP-Path": {
+    "mean_diff": 0.09799008,
+    "median_diff": 0.017000000000000015,
+    "ci_95_low": 0.09079860550000002,
+    "ci_95_high": 0.10478343250000002,
+    "win_rate": 0.9192,
+    "cohens_d": 0.39062198630889283
+  },
+  "EVSI_minus_P8_Oracle": {
+    "mean_diff": -0.004075139684565632,
+    "median_diff": 0.0,
+    "ci_95_low": -0.004495446999268296,
+    "ci_95_high": -0.003698365907046328,
+    "win_rate": 0.0,
+    "cohens_d": -0.2747330564212731
+  }
+}

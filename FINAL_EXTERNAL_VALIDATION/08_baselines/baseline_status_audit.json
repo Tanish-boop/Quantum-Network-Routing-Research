@@ -1,0 +1,38 @@
+{
+  "P0_Never": {
+    "Status": "EXACT",
+    "Name": "Never Benchmark"
+  },
+  "P1_Always": {
+    "Status": "EXACT",
+    "Name": "Always Benchmark"
+  },
+  "P2_IG": {
+    "Status": "EXACT / REIMPLEMENTED",
+    "Name": "Information Gain"
+  },
+  "P3_Confidence": {
+    "Status": "RECONSTRUCTION",
+    "Name": "Confidence-Based Stopping"
+  },
+  "P4_EVSI": {
+    "Status": "OUR METHOD",
+    "Name": "EVSI / Decision-Aware"
+  },
+  "P5_LinkSelFiE": {
+    "Status": "ADAPTED RECONSTRUCTION",
+    "Name": "LinkSelFiE"
+  },
+  "P6_BeQuP_Link": {
+    "Status": "ADAPTED RECONSTRUCTION",
+    "Name": "BeQuP-Link"
+  },
+  "P7_BeQuP_Path": {
+    "Status": "ADAPTED RECONSTRUCTION",
+    "Name": "BeQuP-Path"
+  },
+  "P8_Oracle": {
+    "Status": "ORACLE / PERFECT INFORMATION UPPER BOUND",
+    "Name": "Oracle"
+  }
+}
